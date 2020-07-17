@@ -1,0 +1,19 @@
+#3131 - Louth
+
+owner = IRE
+controller = IRE
+add_core = IRE
+culture = irish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = livestock
+base_manpower = 2
+capital = "Dún Dealgan"
+is_city = yes
+add_local_autonomy = 50
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

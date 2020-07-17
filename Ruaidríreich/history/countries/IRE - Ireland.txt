@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+technology_group = western
+primary_culture = irish
+religion = catholic
+capital = 376	# Galway
+
+1444.1.1 = {
+	monarch = {
+		name = "Toirdhealbhach"
+		dynasty = "Ua Conchobhair"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Maghnus"
+		monarch_name = "Maghnus" 
+		dynasty = "Ua Conchobhair"
+		birth_date = 1430.1.1
+		death_date = 1461.1.1 
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

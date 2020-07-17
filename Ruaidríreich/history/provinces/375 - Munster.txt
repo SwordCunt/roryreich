@@ -1,0 +1,20 @@
+#375 - Munster
+
+owner = IRE
+controller = IRE
+culture = irish
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 3
+trade_goods = grain
+base_manpower = 2
+capital = "Bun na Raite"
+is_city = yes
+add_local_autonomy = 50
+add_core = MNS
+add_core = IRE
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

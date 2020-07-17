@@ -1,0 +1,16 @@
+country_event = {
+	id = takedublin.1
+	title = "takedublin.1"
+	desc = "takedublin1desc"
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "takedublinoption.1"
+		IRE = {
+			add_core = 373
+			}
+		373 = { cede_province = IRE }
+		}

@@ -1,0 +1,31 @@
+#Ireland-Tyrone
+vassal = {
+	first = IRE
+	second = TYR
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+#Ireland-Ulster
+vassal = {
+	first = IRE
+	second = ULS
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+#Ireland-Meath
+vassal = {
+	first = IRE
+	second = MTH
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
+
+#Ireland-Leinster
+vassal = {
+	first = IRE
+	second = LEI
+	start_date = 1444.1.1
+	end_date = 1532.8.3
+}
