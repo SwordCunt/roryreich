@@ -1,21 +1,24 @@
 ire_centralize_1 = {
 	has_country_shield = yes
+	potential = {
+		tag = IRE
+	}
 	ire_secure_munster = {
 		icon = mission_rb_conquer_munster
 		required_missions = { }
 		provinces_to_highlight = {
 			area = munster_area
-			province = 4792
 			NOT = { local_autonomy = 50 }
-	}
-	trigger = {
-		munster_area = {
-			type = all
-			NOT = { local_autonomy = 50 }
-			}
-		IRE = {
+		}
+		trigger = {
 			army_size_percentage = 1
+			munster_area = {
+				type = all
+				NOT = { local_autonomy = 50 }
 			}
 		}
-	effect = {
-		country_event = { id = takedublin.1 } }
+		effect = {
+			country_event = { id = takedublin.1 }
+		}
+	}
+}

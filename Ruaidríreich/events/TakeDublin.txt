@@ -1,16 +1,21 @@
+namespace = takedublin
 country_event = {
 	id = takedublin.1
-	title = "takedublin.1"
-	desc = "takedublin1desc"
+	title = takedublin.1_title
+	desc = takedublin.1_desc
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = "takedublinoption.1"
+		name = takedublin.1_option
 		IRE = {
 			add_core = 373
-			}
-		373 = { cede_province = IRE }
 		}
+		373 = { cede_province = IRE }
+	}
+	option = {
+		name = takedublin.1_option2
+	}
+}
