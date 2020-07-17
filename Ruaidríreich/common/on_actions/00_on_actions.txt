@@ -3634,7 +3634,14 @@ on_convert_by_trade_policy = {
 # FROM = old owner
 on_province_owner_change = {
 
-	owner = { country_event = { id = Oneill.Rebellion.1 days = 1 } }
+	if = {
+		limit = {
+			province_id = 373
+			owned_by = IRE
+			NOT = { has_global_flag = oneillrebellion }
+		}
+		IRE = { country_event = { id = Oneill.Rebellion.1 days = 1 } }
+	}
 
 	events = {
 		japan.1

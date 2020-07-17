@@ -1,36 +1,49 @@
-﻿country_event = {
+﻿namespace = oneillrebellion
+country_event = {
 	id = oneillrebellion.1
-	title = "oneill.rebellion.1"
-	desc = "oneillrebellion1desc"
+	title = oneillrebellion.1_title
+	desc = oneillrebellion.1_desc
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	trigger = {
-		is_core = 373
 		owns = 373
-		tag = IRE
-		NOT = { has_country_flag = oneillrebellion }
+		TYR = {
+			is_subject_of = ROOT
+		}
+	}
+	
+	immediate = {
+		set_global_flag = oneillrebellion
+		TYR = {
+			grant_independence = yes
+			if = {
+				limit = {
+					LEI = {
+						is_subject_of = ROOT
+					}
+				}
+				vassalize = LEI
+			}
+			if = {
+				limit = {
+					ULS = {
+						is_subject_of = ROOT
+					}
+				}
+				vassalize = ULS
+			}
+		}
 	}
 
 	option = {
-		name = "oneillrebellionoption"
-		TYR= {
-			declare_war_with_cb = {
-					who = ROOT
-					casus_belli = cb_humiliate
-			}
-		}
-	}
-
-	immediate = {
+		name = oneillrebellion.1_option
 		TYR = {
-			grant_independence = yes
-			vassalize = LEI
-			vassalize = ULS
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_humiliate
 			}
-		IRE = {
-			set_country_flag = oneillrebellion
-		}
 		}
 	}
+}
