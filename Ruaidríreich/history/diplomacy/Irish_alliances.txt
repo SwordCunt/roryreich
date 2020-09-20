@@ -7,7 +7,7 @@ vassal = {
 }
 
 #Ireland-Ulster
-vassal = {
+march = {
 	first = IRE
 	second = ULS
 	start_date = 1444.1.1

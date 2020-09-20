@@ -39,11 +39,66 @@ country_event = {
 
 	option = {
 		name = oneillrebellion.1_option
-		TYR = {
+		ROOT = {
 			declare_war_with_cb = {
-				who = ROOT
+				who = TYR
 				casus_belli = cb_humiliate
 			}
 		}
+	}
+}
+country_event = {
+	id = oneillrebellion.tyr
+	title = oneillrebellion.tyr_title
+	desc = oneillrebellion.tyr_desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		ROOT = {
+			war_with = IRE
+			TAG = TYR
+		}
+	}
+	immediate = {
+		add_country_modifier = oneillrebellion_tyr
+	}
+
+	option = {
+		name = oneillrebellion.tyr_option
+		capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+		}
+	}
+}
+country_event = {
+	id = oneillrebellion.ulslei
+	title = oneillrebellion.ulslei_title
+	desc = oneillrebellion.ulslei_desc
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		ROOT = {
+			war_with = IRE
+			TAG = ULS
+			TAG = LEI
+		}
+	}
+	immediate = {
+		add_country_modifier = oneillrebellion_ulslei
+			}
+	}
+
+	option = {
+		name = oneillrebellion.ulslei_option
+			capital_scope = {
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
 	}
 }

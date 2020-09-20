@@ -29,3 +29,6 @@ capital = 376	# Galway
 		mil = 3
 	}
 }
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_strong_duchies
+}
